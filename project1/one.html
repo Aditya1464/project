@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porject 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100%;
+            overflow-x: none;
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+        }
+        #header{
+            width: 100vw;
+            /* height: 60vh; */
+            height: 60%;
+            /* height: 500px; */
+            background-image: url("images/bg-hero-desktop.svg");
+            background-color: hsl(193, 100%, 96%);
+            background-size: 100vw 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            /* justify-content: center;
+            align-items: center; */
+       }
+        .topHeader{
+            width: 100vw;
+            height: 5vh;
+            display: flex;
+            justify-content:space-between ;
+            /* align-items: center; */
+            /* padding: 10px; */
+            margin-top: 15px;
+            margin-bottom: 20px;
+            /* padding-left: 40px; */
+            padding-left: 9%;
+            /* padding-right: 45px; */
+            padding-right: 10%;
+        }
+        .topHeader #button1{
+            border-radius: 20px;
+            width: 10%;
+            font-size: 0.6rem;
+            /* font-style: ; */
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 9px;
+            border: none;
+        }
+        .lowerHeader{
+            width: 100vw;
+            /* height: 280px; */
+            height: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /* gap: 30px; */
+            gap: 3%;
+        }
+        .lowerHeader img{
+            width: 35vw;
+            height: 80%;
+            /* height: 80%; */
+        }
+        .lowerHeader .leftBox{
+            width: 45vw;
+            height: 80%;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .lowerHeader h3{
+            font-size: 2.2rem;
+        }
+        .lowerHeader p{
+            font-size: 0.8rem;
+        }
+        .lowerHeader #button2{
+            width: 120px;
+            border-radius: 20px;
+            color: white;
+            font-size: 0.5rem;
+            height: 35px;
+            background-color: hsl(322, 100%, 66%);
+            border: none;
+        }
+
+        #main{
+        width: 100vw;
+        /* height: 700px; */
+        height: 90vw;
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 20px;
+        }
+
+        #main div{
+            width: 80vw;
+            /* height: 200px; */
+            height: 25%;
+            background-color: white;
+            border-radius: 10px;
+            /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+        }
+        #item{
+            width: 80vw;
+            height: 180px;
+            /* height: 25vw; */
+            display: flex;
+            flex-direction: row;
+            gap: 85px;
+            padding: 20px;
+            box-shadow: none;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+        #item .leftItem{
+            width: 35vw;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            padding-top: 7%;
+            gap: 25px;
+        }
+        .leftItem h5{
+             font-size: 1.4rem;
+        }
+        .leftItem p{
+            font-size: 0.7rem;
+        }
+        #item .rightItem{
+            width: 30vw;
+            height: 150px;
+        }
+        #item img{
+            width: 30vw;
+            /* height: 150px; */
+            height: 40vh;
+            background: none;
+        }
+        #item2{
+            width: 80vw;
+            height: 180px;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            padding: 20px;
+            box-shadow: none;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+        #item2 .rightItem2{
+            width: 55vw;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+            gap: 25px;
+        }
+        .rightItem2 h5{
+             font-size: 1.4rem;
+        }
+        .rightItem2 p{
+            font-size: 0.7rem;
+        }
+        #item2 .leftItem2{
+            width: 30vw;
+            height: 150px;
+        }
+        #item2 img{
+            width: 30vw;
+            /* height: 150px; */
+            height: 40vh;
+            background: none;
+        }
+        .box{
+            width: 100vw;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+        }
+        .lowerBox{
+            width: 40vw;
+            height: 200px;
+            /* margin-left: 40%; */
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+        .lowerBox h2{
+            font-size: 1.9rem;
+        }
+        .lowerBox #button3{
+            width: 250px;
+            height: 50px;
+            border-radius: 30px;
+            color: white;
+            background-color: hsl(322, 100%, 66%);
+            border : none;
+        }
+        #footer{
+            width: 100vw;
+            height: 350px;
+            background-color: hsl(192, 100%, 9%);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        #footer .logo2{
+            width: 400px;
+            height: 20%;
+            fill: white;
+            padding-top: 20px;
+            padding-left: 60px;
+            filter: grayscale(10%);
+        }
+        .footerItem{
+            width: 100vw;
+            height: 60%;
+            display: flex;
+            flex-direction: row;
+            /* justify-content: space-around; */
+            gap: 200px;
+            padding-left: 60px;
+            padding-right: 250px;
+        }
+        .contact{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-between; */
+            gap: 30px;
+        }
+        .location{
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .location p{
+            color: white;
+        }
+        .phone{
+            display: flex;
+            flex-direction: column;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .email{
+            display: flex;
+            flex-direction: column;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .about{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .career{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .copyright p{
+            padding-left: 60px;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <header id="header">
+            <div class="header">
+                <div class="topHeader">
+
+                    <img id="logo" src="images/logo.svg" alt="logo">
+                    <input id="button1" type="button" value="Try It Free" onclick="thanx">
+
+                </div>
+
+                <div class="lowerHeader">
+
+                    <div class="leftBox">
+                        <h3>Build The Community Your Fans Will Love</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, maxime laudantium, modi similique blanditiis aliquid sunt veniam, magni eos nulla deleniti! Aspernatur architecto atque repellendus.</p>
+                        <input id="button2" type="button" value="Get Start For Free">
+                    </div>
+                    <div class="rightBox">
+
+                        <img src="images/illustration-mockups.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main id="main">
+
+            <div id="item">
+
+                <div class="leftItem">
+                    <h5>Grow Together</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam voluptatum eaque corporis quas laudantium, porro non iusto libero nemo veritatis! Consectetur iste et ipsam eum?</p>
+                </div>
+                <div class="rightItem">
+                    <img src="images/illustration-grow-together.svg" alt="">
+                </div>
+            </div>
+            <div id="item2">
+                <div class="leftItem2">
+                    <img src="images/illustration-flowing-conversation.svg" alt="">
+                </div>
+                <div class="rightItem2">
+                    <h5>Flowing Conversations</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam voluptatum eaque corporis quas laudantium, porro non iusto libero nemo veritatis! Consectetur iste et ipsam eum?</p>
+                </div>
+            </div>
+            <div id="item">
+                <div class="leftItem">
+                    <h5>Your Users</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam voluptatum eaque corporis quas laudantium, porro non iusto libero nemo veritatis! Consectetur iste et ipsam eum?</p>
+                </div>
+                <div class="rightItem">
+                    <img src="images/illustration-your-users.svg" alt="">
+                </div>
+            </div>
+
+        </main>
+
+        <div class="box">
+            <div class="lowerBox">
+                <h2>Ready To Build Our Community ?</h2>
+                <input id="button3" type="button" value="Get Started for free">
+            </div>
+        </div>
+
+        <footer id="footer">
+
+            <div class="logo2">
+                <img src="images/logo - Copy.svg">
+            </div>
+
+            <div class="footerItem">
+
+                <div class="contact">
+                    <div class="location">
+                        <img src="images/icon-location.svg" width="10px" height="10px">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet facere quas magnam optio! Ratione?</p>
+                    </div>
+                    <div class="phone">
+                        <img src="images/icon-phone.svg" width="10px" height="10px">
+                        <a href="tel:7754037920">7754037920</a>
+                    </div>
+                    <div class="email">
+                        <img src="images/icon-email.svg" width="10px" height="10px">
+                        <a href="mailto:adityasingh1464@gmail.com" > adityasingh1464@gmail.com</a>
+                    </div>
+                </div>
+                <div class="about">
+                    <a href="#">About</a>
+                    <a href="#">What We Do</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="career">
+                    <a href="#">Career</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&#169 Copyright 2023 Huddle, All right reserved</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
