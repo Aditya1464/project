@@ -182,11 +182,13 @@
             /* height: 25vw; */
             display: flex;
             flex-direction: row;
-            align-items: center;
+            /* align-items: center; */
             gap: 85px;
             padding: 20px;
+            padding-bottom: 30px;
             box-shadow: none;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            position: relative;
         }
         #item .leftItem{
             width: 35vw;
@@ -205,6 +207,7 @@
         #item .rightItem{
             width: 30vw;
             height: 150px;
+            /* padding-bottom: 20px; */
         }
         #item img{
             width: 30vw;
@@ -217,7 +220,7 @@
             height: 180px;
             display: flex;
             flex-direction: row;
-            align-items: center;
+            /* align-items: center; */
             gap: 30px;
             padding: 20px;
             box-shadow: none;
@@ -256,16 +259,26 @@
                 height: 50%;
             }
             #item{
+                width: 100vw;
                 flex-direction: column-reverse;
+                gap: 20%;
                 /* height: 60%; */
+                padding-left: 25%;
+                /* padding-right: 25%; */
+                padding-bottom: 20%;
             }
             #item2{
+                width: 100vw;
                 flex-direction: column;
+                gap: 20%;
                 /* height: 60%; */
+                padding-left: 25%;
+                padding-bottom: 20%;
             }
             #item .leftItem{
-                width: 60vw;
+                width: 50vw;
                 height: 45%;
+                padding-right: 30%;
             }
             #item .rightItem{
                 display: flex;
@@ -279,15 +292,16 @@
             #item2 .leftItem2{
                 display: flex;
                 justify-content: center;
-                height:35%;
+                height: 35%;
             }
             #item2 img{
                 width: 70vw;
                 height: 35vh;
             }
             #item2 .rightItem2{
-                width: 60vw;
+                width: 50vw;
                 height: 45%;
+                padding-right: 30%;
             }
             .leftItem h5{
                 text-align: center;
@@ -304,13 +318,17 @@
         }
         .box{
             width: 100vw;
-            height: 200px;
+            height: 15%;
             display: flex;
             justify-content: center;
+            position: absolute;
+            /* bottom: 300px; */
+            bottom: 7%;
+            z-index: 1;
         }
         .lowerBox{
             width: 40vw;
-            height: 200px;
+            height: 55%;
             /* margin-left: 40%; */
             background-color: white;
             border-radius: 10px;
@@ -318,7 +336,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 50px;
+            /* gap: 50px; */
+            gap: 35%;
             padding-top: 30px;
             padding-bottom: 10px;
         }
@@ -326,12 +345,38 @@
             font-size: 1.9rem;
         }
         .lowerBox #button3{
-            width: 60vw;
+            width: 20vw;
             height: 50px;
             border-radius: 30px;
             color: white;
             background-color: hsl(322, 100%, 66%);
             border : none;
+        }
+        @media (max-width:600px) {
+            .box{
+                width: 100vw;
+                height: 13%;
+                position: absolute;
+                bottom: 1.5%;
+                z-index: 1;
+            }.lowerBox{
+                width: 60%;
+                height: 30%;
+                border-radius: 5px;
+                /* gap: 20%; */
+                gap: 30px;
+                padding: 5%;
+            }
+            .lowerBox h2{
+                height: 30%;
+            font-size: 0.9rem;
+            text-align: center;
+            }
+            .lowerBox #button3{
+                font-size: 0.5rem;
+                width: 70%;
+                
+            }
         }
         #footer{
             width: 100%;
@@ -342,6 +387,9 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            padding-top: 10%;
+            position: relative;
+            bottom: 0;
         }
         #footer .logo2{
             width: 60vw;
