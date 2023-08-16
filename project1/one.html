@@ -357,8 +357,9 @@
                 width: 100vw;
                 height: 13%;
                 position: absolute;
-                bottom: 6.5%;
+                bottom: 7.5%;
                 z-index: 1;
+                margin-top: 20px;
             }.lowerBox{
                 width: 60%;
                 height: 30%;
@@ -457,13 +458,13 @@
             color: white;
         }
         .copyright p{
-            /* padding-left: 60px; */
             color: white;
         }
         @media (max-width : 600px) {
             #footer{
                 height: 100%;
                 flex-direction: column;
+                align-items: center;
             }
             #footer .logo2 img{
                 width: 50vw;
@@ -473,37 +474,48 @@
                 gap: 25px;
             }
             .contact{
-                padding-left: 5%;
+                align-items: center;
                 gap: 10px;
             }
             .contact img{
                 padding: 3%;
             }
             .location{
+                flex-direction: column;
+                align-items: center;
                 gap: 10px;
                 width: 85%;
             }
+            .location p{
+                text-align: center;
+            }
             .phone{
+                flex-direction: column;
+                align-items: center;
                 gap: 10px;
                 width: 60%;
             }
             .email{
+                flex-direction: column;
+                align-items: center;
                 gap: 10px;
                 width: 60%;
             }
             .about{
+                text-align: center;
+                align-items: center;
                 width: 60%;
-                padding-left: 15%;
+                padding-left: 40%;
                 gap: 10px;
             }
             .career{
+                text-align: center;
+                align-items: center;
                 width: 60%;
-                padding-left: 15%;
+                padding-left: 40%;
                 gap: 10px;
             }
             .copyright p{
-                padding-left: 10px;
-                paddint-bottom: 3px;
                 font-size: 0.8rem;
             }
         }
@@ -594,17 +606,17 @@
 
                 <div class="contact">
                     <div class="location">
-                        <img src="images/icon-location.svg" width="25px" height="25px">
+                        <img src="images/icon-location.svg" width="35px" height="35px">
                         <!-- <img src="images/icon-location.svg" > -->
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet facere quas magnam optio! Ratione?</p>
                     </div>
                     <div class="phone">
-                        <img src="images/icon-phone.svg" width="20px" height="20px">
+                        <img src="images/icon-phone.svg" width="30px" height="30px">
                         <!-- <img src="images/icon-phone.svg" > -->
                         <a href="tel:7754037920">7754037920</a>
                     </div>
                     <div class="email">
-                        <img src="images/icon-email.svg" width="20px" height="20px">
+                        <img src="images/icon-email.svg" width="30px" height="30px">
                         <!-- <img src="images/icon-email.svg"> -->
                         <a href="mailto:adityasingh1464@gmail.com" > adityasingh1464@gmail.com</a>
                     </div>
