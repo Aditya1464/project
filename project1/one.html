@@ -357,23 +357,23 @@
                 width: 100vw;
                 height: 13%;
                 position: absolute;
-                bottom: 1.5%;
+                bottom: 7.5%;
                 z-index: 1;
             }.lowerBox{
                 width: 60%;
                 height: 30%;
-                border-radius: 5px;
+                border-radius: 8px;
                 /* gap: 20%; */
                 gap: 30px;
                 padding: 5%;
             }
             .lowerBox h2{
                 height: 30%;
-            font-size: 0.9rem;
-            text-align: center;
+                font-size: 0.9rem;
+                text-align: center;
             }
             .lowerBox #button3{
-                font-size: 0.5rem;
+                font-size: 0.45rem;
                 width: 70%;
                 
             }
@@ -459,6 +459,51 @@
         .copyright p{
             /* padding-left: 60px; */
             color: white;
+        }
+        @media (max-width : 600px) {
+            #footer{
+                height: 100%;
+                flex-direction: column;
+            }
+            #footer .logo2 img{
+                width: 50vw;
+            }
+            .footerItem{
+                flex-direction: column;
+                gap: 25px;
+            }
+            .contact{
+                padding-left: 5%;
+                gap: 10px;
+            }
+            .contact img{
+                padding: 3%;
+            }
+            .location{
+                gap: 10px;
+                width: 85%;
+            }
+            .phone{
+                gap: 10px;
+                width: 60%;
+            }
+            .email{
+                gap: 10px;
+                width: 60%;
+            }
+            .about{
+                width: 60%;
+                padding-left: 15%;
+                gap: 10px;
+            }
+            .career{
+                width: 60%;
+                padding-left: 15%;
+                gap: 10px;
+            }
+            .copyright p{
+                font-size: 0.8rem;
+            }
         }
 
     </style>
@@ -547,17 +592,17 @@
 
                 <div class="contact">
                     <div class="location">
-                        <img src="images/icon-location.svg" width="10px" height="10px">
+                        <img src="images/icon-location.svg" width="25px" height="25px">
                         <!-- <img src="images/icon-location.svg" > -->
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet facere quas magnam optio! Ratione?</p>
                     </div>
                     <div class="phone">
-                        <img src="images/icon-phone.svg" width="10px" height="10px">
+                        <img src="images/icon-phone.svg" width="20px" height="20px">
                         <!-- <img src="images/icon-phone.svg" > -->
                         <a href="tel:7754037920">7754037920</a>
                     </div>
                     <div class="email">
-                        <img src="images/icon-email.svg" width="10px" height="10px">
+                        <img src="images/icon-email.svg" width="20px" height="20px">
                         <!-- <img src="images/icon-email.svg"> -->
                         <a href="mailto:adityasingh1464@gmail.com" > adityasingh1464@gmail.com</a>
                     </div>
