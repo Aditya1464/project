@@ -165,7 +165,7 @@
         flex-direction: column;
         align-items: center;
         padding: 10px;
-        gap: 20px;
+        gap: 60px;
         }
 
         #main div{
@@ -323,7 +323,7 @@
             justify-content: center;
             position: absolute;
             /* bottom: 300px; */
-            bottom: 7%;
+            bottom: 8%;
             z-index: 1;
         }
         .lowerBox{
@@ -357,7 +357,7 @@
                 width: 100vw;
                 height: 13%;
                 position: absolute;
-                bottom: 11.5%;
+                bottom: 7.5%;
                 z-index: 1;
                 margin-top: 20px;
             }.lowerBox{
@@ -382,11 +382,13 @@
         #footer{
             width: 100%;
             /* height: 350px; */
-            height: 55vh;
-            /* height: 50%; */
+            /* height: 75vh; */
+            /* height: 10%; */
             background-color: hsl(192, 100%, 9%);
             display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
             gap: 20px;
             padding-top: 10%;
             position: relative;
@@ -397,34 +399,43 @@
             height: 20%;
             fill: white;
             /* padding-top: 20px; */
-            padding-top: 2%;
-            padding-left: 4.5%;
+            /* padding-top: 2%; */
+            /* padding-left: 4.5%; */
+            position: absolute;
+            left: 4.4%;
+            top: 20%;
         }
         /* #footer .logo2 img{
             width: 20vw;
             height: 20%;
         } */
+        .logo2 img{
+            width: 200px;
+        }
         .footerItem{
             width: 100vw;
-            height: 60%;
+            /* height: 0%; */
             display: flex;
             flex-direction: row;
             /* justify-content: space-around; */
-            /* gap: 200px;
+            gap: 200px;
             padding-left: 60px;
-            padding-right: 250px;*/
+            padding-right: 250px;
         } 
         .contact{
             display: flex;
             flex-direction: column;
-            /* justify-content: space-between; 
-            /* gap: 30px; */
+            justify-content: space-between; 
+            gap: 30px; 
+        }
+        .contact img{
+            padding: 2%;
         }
         .location{
-            width: 30%;
+            width: 90%;
             display: flex;
             flex-direction: row;
-            /* gap: 10px; */
+            gap: 20px;
         }
         .location p{
             color: white;
@@ -433,25 +444,25 @@
             display: flex;
             flex-direction: column;
             flex-direction: row;
-            /* gap: 10px; */
+            gap: 10px;
         }
         .email{
             display: flex;
             flex-direction: column;
             flex-direction: row;
-            /* gap: 10px; */
+            gap: 10px;
         }
         .about{
             width: 30%;
             display: flex;
             flex-direction: column;
-            /* gap: 20px; */
+            gap: 20px;
         }
         .career{
             width: 30%;
             display: flex;
             flex-direction: column;
-            /* gap: 20px; */
+            gap: 20px;
         }
         a{
             text-decoration: none;
@@ -459,6 +470,8 @@
         }
         .copyright p{
             color: white;
+            text-align: center;
+            padding-bottom: 10px;
         }
         @media (max-width : 600px) {
             #footer{
